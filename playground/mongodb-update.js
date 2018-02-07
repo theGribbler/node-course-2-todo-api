@@ -34,7 +34,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
       $set: {
         name: "Pauly"
       },
-        $inc: {
+        $inc: { //you can execute multiple operations
           age: 1
           }
       }, {
